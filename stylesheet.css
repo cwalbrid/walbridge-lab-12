@@ -1,20 +1,81 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
 
 body{
-	background-color: rgb(217, 217, 217);
+	background-color: #304B63;
 }
 
-div{
-	
-	margin: auto;
-	width: 50%;
-	height:700px;
-	background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1c/Hindenburg_disaster.jpg');
-	background-repeat: no-repeat;
+
+.content {
+   min-height: 600px;  
+   display: flex;
+   width: 100%;
+   position: relative;
+   margin-top: 5%;
+   background-color: #3C7181;
+}
+
+
+.wrapper {
+  width: 50%;
+  /*text-align: center;*/
+  margin: 0 auto;
+  padding: 5%;
+  border-radius: 25px;
+  background-color: #CFE4E8;
+}
+
+.heading{
+	margin: 0 auto;
+	width: 65%;
+	font-family: 'Noto Serif', serif;
+	color: #001F54;
+	font-size: 60px;
+	/*text-decoration: underline;*/
+
+
+}
+
+.list{
+	margin: 8% auto 0;
+	width: 60%;
+	font-family: 'Noto Sans', sans-serif;
+	color: #001F54;
+	font-size: 28px;
+}
+
+
+.list ul{
+	text-align: left;
+	list-style-type: none;
+	/*border: solid #001F54 1px;*/
+	border-radius: 5px;
+}
+
+.list li{
+	cursor: pointer;
+	transition: .2s;
+	padding: 5px;
+	/*border: solid #001F54 1px;
+	border-radius: 5px;*/
+}
+
+.list li:hover{
+	background-color: #001F54;
 	color: white;
+	font-style: italic; 
+	/*border: solid white 1px;*/
+	border: none;
+	border-radius: 5px;
+
 }
 
-section{
-	padding-top:60%;
-	padding-left:5%;
 
-}
+
+

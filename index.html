@@ -3,21 +3,29 @@
 <head>
 	<title>Lab 12</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400|Noto+Serif:700i" rel="stylesheet">
 </head>
 <body ng-controller ="toDoController">
+
+<div class="content">
+	<div class="wrapper">
 	
-<h1>To-Do List</h1>
-	<input type="text" placeholder="Filter..." ng-model="choreFilter">
-	<ul>
-		<li ng-repeat="chore in chores | filter: choreFilter track by $index"><button type="submit" ng-click="removeChore(chore)">x</button>{{chore}}</li>
 
-	</ul>
+	<p class="heading">To-Do List</p>
+		<div class="list">
+			<ul>
+				<li ng-repeat="chore in chores | filter: choreFilter track by $index" ng-click="removeChore(chore)">{{chore}}</li>
+			</ul>
 
-	<form>
-		<input  type="text" placeholder="Chores..." ng-model="choreToAdd">
-			<button type="submit" id="button" ng-click="onClick(choreToAdd)">Add</button>
-	</form>		
-
+			<form>
+				<input  type="text" placeholder="Chores..." ng-model="choreToAdd">
+				<button type="submit" id="button" ng-click="addChore(choreToAdd)">Add</button><br>
+				<input type="text" placeholder="Filter..." ng-model="choreFilter">
+			</form>		
+		</div>	
+	</div>	
+	
+</div>	
 
 <script type="text/javascript" src="angular.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
