@@ -9,6 +9,7 @@
 
 body{
 	background-color: #304B63;
+
 }
 
 
@@ -19,6 +20,8 @@ body{
    position: relative;
    margin-top: 5%;
    background-color: #3C7181;
+
+   /*background: linear-gradient(#3C7181, #94B1BA, #3C7181);*/
 }
 
 
@@ -29,6 +32,7 @@ body{
   padding: 5%;
   border-radius: 25px;
   background-color: #CFE4E8;
+  /*box-shadow: 0 0 20px #000;*/
 }
 
 .heading{
