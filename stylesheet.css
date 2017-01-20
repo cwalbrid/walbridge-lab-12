@@ -58,17 +58,16 @@ body{
 	font-family: 'Noto Sans', sans-serif;
 	color: #001F54;
 	font-size: 28px;
-	overflow: hidden;
-	overflow-x: hidden; 
+	overflow-y: auto; 
 	height:250px; 
 	transition: 2s;
 	
 }
 
-.list:hover {
+/*.list:hover {
 	overflow: scroll;
 	overflow-x: hidden;
-}
+}*/
 
 .list ul{
 	text-align: left;
