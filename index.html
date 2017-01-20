@@ -17,12 +17,13 @@
 				<li ng-repeat="chore in chores | filter: choreFilter track by $index" ng-click="removeChore(chore)">{{chore}}</li>
 			</ul>
 
-			<form>
+					
+		</div>	
+		<form>
 				<input  type="text" placeholder="Chores..." ng-model="choreToAdd">
 				<button type="submit" id="button" ng-click="addChore(choreToAdd)">Add</button><br>
 				<input type="text" placeholder="Filter..." ng-model="choreFilter">
-			</form>		
-		</div>	
+		</form>
 	</div>	
 	
 </div>	
