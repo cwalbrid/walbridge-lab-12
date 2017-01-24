@@ -3,7 +3,7 @@
 <head>
 	<title>Lab 12</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400|Noto+Serif:700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400|Noto+Serif:700i|Open+Sans" rel="stylesheet">
 </head>
 <body ng-controller ="toDoController">
 
@@ -20,9 +20,9 @@
 					
 		</div>	
 		<form>
-				<input  type="text" placeholder="Chores..." ng-model="choreToAdd">
+				<input id="chores" type="text" placeholder="Chores..." ng-model="choreToAdd">
 				<button type="submit" id="button" ng-click="addChore(choreToAdd)">Add</button><br>
-				<input type="text" placeholder="Filter..." ng-model="choreFilter">
+				<input id="filter" type="text" placeholder="Filter..." ng-model="choreFilter">
 		</form>
 	</div>	
 	
